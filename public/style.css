@@ -6,3 +6,20 @@
 .red-quote{
   color: red;
 }
+
+#main {
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  background-color: hotpink;
+  font-family: Arial;
+  font-size: 20px;
+  text-align: center;
+}

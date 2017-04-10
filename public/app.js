@@ -45,15 +45,12 @@ cats = [
   { name: "Steve", food: "Favourite food: Chips", image: "Favourite Food: Chips", image: "http://www.childsplayaz.org/sysimg/large-Cat-Fish-JugglingonBall-WEB.jpg" },
 
   { name: "Serious Cat", food: "Favourite food: Crisps", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/CatLolCatExample.jpg/220px-CatLolCatExample.jpg" }
-
 ]
 
 var app = function(){
-
   cats.forEach(function(cat){
     addCat(cat.name, cat.food, cat.image);
   })
-
 }
 
 window.onload = app;
