@@ -35,18 +35,24 @@ var appendElements = function(cat, name, food, image){
   cats.appendChild(cat);
 }
 
+cats = [
+  { name: "Boba", food: "Favourite food: Sock fluff", image: "http://66.media.tumblr.com/d1f01bbe0150fda0c40d2151c5eaeac8/tumblr_odlqqskjj61v9cejwo1_400.jpg" },
+
+  { name: "Barnaby", food: "Favourite food: Tuna", image: "http://digitalspyuk.cdnds.net/15/44/640x426/gallery-cat-3.jpg" },
+
+  { name: "Max", food: "Favourite food: Whiskas Temptations", image: "http://66.media.tumblr.com/7c5784ea89369c780e782bf10c60315a/tumblr_npb0hlYwhV1u63jaco1_1280.jpg" },
+
+  { name: "Steve", food: "Favourite food: Chips", image: "Favourite Food: Chips", image: "http://www.childsplayaz.org/sysimg/large-Cat-Fish-JugglingonBall-WEB.jpg" },
+
+  { name: "Serious Cat", food: "Favourite food: Crisps", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/CatLolCatExample.jpg/220px-CatLolCatExample.jpg" }
+
+]
+
 var app = function(){
 
-  addCat("Name: Boba", "Favourite food: Sock fluff", "http://66.media.tumblr.com/d1f01bbe0150fda0c40d2151c5eaeac8/tumblr_odlqqskjj61v9cejwo1_400.jpg")
-
-  addCat("Name: Barnaby", "Favourite food: Tuna", "http://digitalspyuk.cdnds.net/15/44/640x426/gallery-cat-3.jpg")
-
-  addCat("Name: Max", "Favourite food: Whiskas Temptations", "http://66.media.tumblr.com/7c5784ea89369c780e782bf10c60315a/tumblr_npb0hlYwhV1u63jaco1_1280.jpg")
-
-  addCat("Name: Steve", "Favourite Food: Chips", "http://www.childsplayaz.org/sysimg/large-Cat-Fish-JugglingonBall-WEB.jpg");
-
-  addCat("Name: Serious Cat", "Favourite Food: Crisps", "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/CatLolCatExample.jpg/220px-CatLolCatExample.jpg");
-
+  cats.forEach(function(cat){
+    addCat(cat.name, cat.food, cat.image);
+  })
 
 }
 
